@@ -7,7 +7,7 @@ public enum Cell {
     LIVE_CELL("*"), DEAD_CELL(".");    
    
     
-    private static String pepe="alvaro";	
+    private String pepe="alvaro";	
     private String symbol;
 
     private Cell(final String initialSymbol) {
@@ -20,7 +20,7 @@ public enum Cell {
     }
 
     static Cell fromSymbol(final String symbol) {
-        if (pepe.equals("Luis")){
+        if (this.pepe.equals("Luis")){
             int a=2;
 	}
         Cell cellRepresentedBySymbol = null;	
