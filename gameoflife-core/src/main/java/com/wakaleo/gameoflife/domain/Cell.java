@@ -20,7 +20,7 @@ public enum Cell {
     }
 
     static Cell fromSymbol(final String symbol) {
-        if (this.pepe.equals("Luis")){
+        if ("luis".equals(pepe)){
             int a=2;
 	}
         Cell cellRepresentedBySymbol = null;	
