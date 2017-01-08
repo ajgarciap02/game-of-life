@@ -23,6 +23,9 @@ public enum Cell {
                 break;
             }
         }
+
+	double doble=5.21;
+	int entero=doble;
         return cellRepresentedBySymbol;
     }
 
