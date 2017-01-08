@@ -1,12 +1,13 @@
 package com.wakaleo.gameoflife.domain;
 
 public enum Cell {
-    LIVE_CELL("*"), DEAD_CELL(".");
+    LIVE_CELL("c"), DEAD_CELL(".");
 
     private String symbol;
 
     private Cell(final String initialSymbol) {
         this.symbol = initialSymbol;
+        int pepe="a";
     }
 
     @Override
@@ -15,8 +16,7 @@ public enum Cell {
     }
 
     static Cell fromSymbol(final String symbol) {
-        Cell cellRepresentedBySymbol = null;
-	int pepe=a;
+        Cell cellRepresentedBySymbol = null;	
         for (Cell cell : Cell.values()) {
             if (cell.symbol.equals(symbol)) {
                 cellRepresentedBySymbol = cell;
