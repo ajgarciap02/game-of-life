@@ -1,12 +1,13 @@
 package com.wakaleo.gameoflife.domain;
 
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+
 
 public enum Cell {
     LIVE_CELL("*"), DEAD_CELL(".");    
-
+   
+    
+    private String pepe="alvaro";	
     private String symbol;
 
     private Cell(final String initialSymbol) {
@@ -19,8 +20,10 @@ public enum Cell {
     }
 
     static Cell fromSymbol(final String symbol) {
+        if (pepe.equals("Luis")){
+            int a=2;
+	}
         Cell cellRepresentedBySymbol = null;	
-       
         for (Cell cell : Cell.values()) {
             if (cell.symbol.equals(symbol)) {
                 cellRepresentedBySymbol = cell;
@@ -28,7 +31,7 @@ public enum Cell {
             }
         }
 
-	 BufferedReader in = new BufferedReader (new InputStreamReader(enlace.getInputStream()));
+	
 
         return cellRepresentedBySymbol;
     }
