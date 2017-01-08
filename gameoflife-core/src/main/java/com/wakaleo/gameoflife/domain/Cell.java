@@ -1,5 +1,9 @@
 package com.wakaleo.gameoflife.domain;
 
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 public enum Cell {
     LIVE_CELL("*"), DEAD_CELL(".");    
 
@@ -24,8 +28,7 @@ public enum Cell {
             }
         }
 
-	int entero=3;
-	double doble=entero;
+	 BufferedReader in = new BufferedReader (new InputStreamReader(enlace.getInputStream()));
 
         return cellRepresentedBySymbol;
     }
