@@ -7,7 +7,7 @@ public enum Cell {
     LIVE_CELL("*"), DEAD_CELL(".");    
    
     
-    private String pepe="alvaro";	
+    private static String pepe="alvaro";	
     private String symbol;
 
     private Cell(final String initialSymbol) {
